@@ -3,27 +3,48 @@
   <head>
     <title>The Yong Times</title>
     <style>
+      html {
+        background-color: tomato;
+      }
+      body {
+        margin: 20px;
+        padding: 20px;
+        background-color: thistle;
+      }
       div {
         height: 150px;
         width: 150px;
-        background-color: tomato;
+        padding: 10px;
       }
-      span {
-        background-color: turquoise;
+      #first {
+        background-color: whitesmoke;
+        width: 150px;
+        height: 150px;
+      }
+      #second {
+        background-color: teal;
+        width: 100px;
+        height: 100px;
+      }
+      #third {
+        background-color: wheat;
+        width: 50px;
+        height: 50px;
+      }
+      #fourth {
+        background-color: chocolate;
+        width: 25px;
+        height: 25px;
       }
     </style>
-    <meta charset="utf-8" />
   </head>
   <body>
-    <div></div>
-
-    <span>hello</span>
-    <span>hello</span>
-    <code>hahaha</code>
-    <span>hello</span>
-    <a href="#">link</a>
-    <span>hello</span>
-    <img src="img/logo.png" /><span>hello</span>
-    <address>hello seoul!</address>
+    <div id="first">
+      <div id="second">
+        <div id="third">
+          <div id="fourth"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
