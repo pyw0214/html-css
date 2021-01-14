@@ -5,24 +5,32 @@
     <style>
       body {
         height: 1000vh;
-        margin: 20px;
+        margin: 50px;
       }
-      div {
-        width: 300px;
-        height: 300px;
+      span {
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
       }
-      #green {
-        background-color: #008080;
-        position: fixed;
-        opacity: 40%;
+      input {
+        border: 1px solid wheat;
       }
-      #different {
-        background-color: wheat;
+
+      input:required {
+        border-color: tomato;
+      }
+      input[placeholder~="name"] {
+        background-color: thistle;
       }
     </style>
   </head>
   <body>
-    <div id="green"></div>
-    <div id="different"></div>
+    <div>
+      <form>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="password" required placeholder="password" />
+      </form>
+    </div>
   </body>
 </html>
