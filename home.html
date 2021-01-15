@@ -3,34 +3,23 @@
   <head>
     <title>The Yong Times</title>
     <style>
-      body {
-        height: 1000vh;
-        margin: 50px;
+      a {
+        color: wheat;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 50px;
+        transition: all 1s ease-in-out;
       }
-      span {
-        background-color: yellowgreen;
-        padding: 5px;
-        border-radius: 10px;
-      }
-      input {
-        border: 1px solid wheat;
-      }
-
-      input:required {
-        border-color: tomato;
-      }
-      input[placeholder~="name"] {
-        background-color: thistle;
+      a:hover {
+        border-radius: 15px;
+        color: tomato;
+        background-color: wheat;
       }
     </style>
   </head>
   <body>
-    <div>
-      <form>
-        <input type="text" placeholder="First name" />
-        <input type="text" placeholder="Last name" />
-        <input type="password" required placeholder="password" />
-      </form>
-    </div>
+    <a href="#">Go Home</a>
   </body>
 </html>
